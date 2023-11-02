@@ -4,6 +4,39 @@
         <h1>>> Week 7: October 29 - November 4</h1>
         <h1>>> >> Total: 3 Hours</h1>
         <h2>>> >> Rock Modeling: 3 Hours</h2>
+        <img src="https://cdn.discordapp.com/attachments/1169450315024707634/1169450315372822578/Rocs.png?ex=6555727a&is=6542fd7a&hm=56f85fe6bf8fd2b6773af58cde115ebf1e4732a76209f2965eea86506fd29c25&"
+            alt="Rock Methods" width="600" height="auto">
+        <h5><br>>> >> >> Process</h5>
+        <p>>> >> >> I found 4 different methods for generating rocks, each increasingly building upon one another:</p>
+        <h4>>> >> >> >> 1 - Decimate:</h5>
+        <p>>> >> >> >> I took a cube, subdivided it, displaced each of the vertices along the vertex normals based on
+            a randomly generated voronoi pattern. After this, I used a decimate modifier to clear up the extra geometry
+            along smooth planes.
+        </p>
+        <h4>>> >> >> >> 2 - Subdivision Surface:</h5>
+        <p>>> >> >> >> I started the same as I did in the first method, except before I implemented the decimate modifier,
+            I utilized the Catmull-Clark subdivision surface algorithm to get smoother edges.
+        </p>
+        <h4>>> >> >> >> 3 - Remesh:</h5>
+        <p>>> >> >> >> I again inserted a new function, this time before the subdivision surface modifier.
+            This addition was the remesh modifier, which cleans up the geometry of the mesh. This helps by
+            allowing the SubSurf modifier to have a more even area to subdivide, preventing the detail destructive
+            dulling of edges.
+        </p>
+        <h4>>> >> >> >> 4 - N-gons:</h5>
+        <p>>> >> >> >> I wanted to create more contrast between the flat faces of the rocks and their jagged edges.
+            To do this I added yet another step right before my previous addition; this time a manual step. After
+            the voronoi displacement, I manually deleted the verteces of the flat sections of rock. Now when the
+            model is remeshed, it will keep the flat areas especially flat.
+        </p>
+        <h5><br>>> >> >> Reflections</h5>
+        <p>>> >> >> After going through the process of making these rocks, I realized the value of iterating on
+            quicker parts of the project, because this process will yield more interesting results that the
+            initial iteration. This is not as practical for larger endeavors, like ehat I have been working on
+            till now. I now see the value of going through the process of sketching out the designs before
+            jumping into Blender. The expedited nature of sketches allows for rapid iteration, whose design
+            improvements are then embodied to the final model.
+        </p>
     </body>
 </html>
 <style>
