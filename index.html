@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script type="text/javascript">
-        const body = document.body;
-    
-        function changeBackground() {
-            const color1 = Math.floor(Math.random() * 256);
-            const color2 = Math.floor(Math.random() * 256);
-            const color3 = Math.floor(Math.random() * 256);
-            body.style.backgroundColor = `rgb(${color1}, ${color2}, ${color3})`;
-        }
-        function noiseGradient(x) {
-            return (Math.sin(x * Math.PI / 2) + 1) / 2;
-        }
-    
-        //setInterval(changeBackground, 1000); // Change background every second
+    <script type="text/javascript">const text = document.getElementById('text');
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const button3 = document.getElementById('button3');
+        
+        // Add event listeners to the buttons
+        button1.addEventListener('mouseover', function() {
+          text.style.color = 'red';
+        });
+        
+        button2.addEventListener('mouseover', function() {
+          text.style.color = 'green';
+        });
+        
+        button3.addEventListener('mouseover', function() {
+          text.style.color = 'blue';
+        });
     </script>
 </body>
 </html>
