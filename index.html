@@ -1,3 +1,14 @@
+<script>
+    const body = document.body;
+
+    function changeBackground() {
+        const color1 = Math.floor(Math.random() * 256);
+        const color2 = Math.floor(Math.random() * 256);
+        const color3 = Math.floor(Math.random() * 256);
+        body.style.backgroundColor = `rgb(${color1}, ${color2}, ${color3})`;
+    }
+    setInterval(changeBackground, 1000); // Change background every second
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
