@@ -12,6 +12,20 @@
         const button1 = document.getElementById('button1');
         const button2 = document.getElementById('button2');
         const button3 = document.getElementById('button3');
+
+        // Get all elements with the class "clickable"
+        var clickables = document.getElementsByClassName("clickable");
+
+        // Loop through each element and add an event listener for the "mouseover" event
+        for (var i = 0; i < clickables.length; i++) {
+        clickables[i].addEventListener("mouseover", function() {
+            // Get the current position of the element
+            var pos = this.getBoundingClientRect();
+            
+            // Move the element slightly to the right
+            this.style.left = (pos.left + 10) + "px";
+        });
+        }
         
         // Add event listeners to the buttons
         button1.addEventListener('mouseover', function() {
