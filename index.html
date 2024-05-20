@@ -18,7 +18,8 @@
 
         // Loop through each element and add an event listener for the "mouseover" event
         for (var i = 0; i < clickables.length; i++) {
-        clickables[i].addEventListener("mouseover", function() {
+        clickables[i].addEventListener("mouseover",
+            (event) => {
             // Get the current position of the element
             var pos = this.getBoundingClientRect();
             
