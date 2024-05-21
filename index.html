@@ -7,42 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 class = "clickable">Zane Mohammad's Porfolio</h1>
-    <button id = "button1"><a href="Games.html">Games</a></button>
-    <br />
-    <button id = "button2"><a href="3Dmodels.html">3D Models</a></button>
+    <h1>Zane Mohammad's Porfolio</h1>
     <script type="text/javascript">const text = document.getElementById('text');
-        const button1 = document.getElementById('button1');
-        const button2 = document.getElementById('button2');
-        const button3 = document.getElementById('button3');
+        var button1 = document.createElement("button");
+            button1.style.width = "150px";
+            button1.style.height = "50px";
+            button1.style.position = "absolute";
+            button1.style.left = "50px";
+            button1.style.top = "100px";
+            button1.innerHTML = "Games";
+            button1.addEventListener("click", function() {
+                window.location.href = "Games.html";
+            });
+            document.body.appendChild(button1);
 
-        // Get all elements with the class "clickable"
-        var clickables = document.getElementsByClassName("clickable");
-
-        // Loop through each element and add an event listener for the "mouseover" event
-        for (var i = 0; i < clickables.length; i++) {
-        clickables[i].addEventListener("mouseover",
-            (event) => {
-            // Get the current position of the element
-            var pos = this.getBoundingClientRect();
-            
-            // Move the element slightly to the right
-            this.style.left = (pos.left + 10) + "px";
-        });
-        }
-        
-        // Add event listeners to the buttons
-        button1.addEventListener('mouseover', function() {
-          text.style.color = 'red';
-        });
-        
-        button2.addEventListener('mouseover', function() {
-          text.style.color = 'green';
-        });
-        
-        button3.addEventListener('mouseover', function() {
-          text.style.color = 'blue';
-        });
+        var button2 = document.createElement("button");
+            button2.style.width = "150px";
+            button2.style.height = "50px";
+            button2.style.position = "absolute";
+            button2.style.left = "50px";
+            button2.style.top = "200px";
+            button2.innerHTML = "3D Models";
+            button2.addEventListener("click", function() {
+                window.location.href = "3DModels.html";
+            });
+            document.body.appendChild(button2);
     </script>
 </body>
 </html>
@@ -52,33 +41,24 @@ body {
             background-color: #000;
         }
         h1{
-            font: Georgia;
-            font-size: 32;
-            font-weight: normal;
             color: whitesmoke;
+            font: Georgia;
+            font-size: 64;
+            font-weight: normal;
             text-indent: 5%;
-            left: 50;
-            top: 100;
+            left: 100;
+            top: 150;
         }
         button {
-            background-color: transparent;
-            text-decoration: none;
+            background-color: green;
             border: none;
             text-indent: 5%;
             color: whitesmoke;
+            text-align: center;
+            width: 250;
+            height: 50;
+            font: Georgia;
             font-size: 18px;
             cursor: pointer;
-        }
-        .button1 {
-            background-color: #4CAF50; /* Green */
-            color: white;
-        }
-        .button2 {
-            background-color: #f44336; /* Red */
-            color: white;
-        }
-        .button3 {
-            background-color: #e7e7e7; /* Gray */
-            color: black;
         }
 </style>
