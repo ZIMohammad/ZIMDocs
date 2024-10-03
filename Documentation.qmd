@@ -1,0 +1,44 @@
+---
+title: "Documentation"
+format:
+  html:
+    theme: darkly
+    embed-resources: true
+mainfont: Courier
+---
+
+## Week 1 Total: 7 Hours
+### >> September 17 - 23
+
+## Week 2 Total: 5.5 Hours
+### >> September 24 - 30
+
+Abbassid Style Architechture Design: -------- 1 Hour -------- Sept. 28\
+European Architechture Design: -------- 2 Hours ------- Sept. 29\
+East Asian Architechture Design: ------ 2.5 Hours ----- Sept. 30
+
+## Week 3 Total: 4.5 Hours
+### >> October 1 - 7
+
+Flowing Hair Shader: -------- 1 Hour -------- Oct. 3\
+Flowing Hair Shader: -------- 3.5 Hours ----- Oct. 7
+
+## Week 4 Total: 9.5 Hours
+### >> October 8 - 14
+Asian Town Modeling: -------- 4.5 Hours ------ Oct. 10\
+Asian Fort Modeling: -------- 2.5 Hours ------ Oct. 11\
+Basic Town Modeling: -------- 2 Hours -------- Oct. 12\
+Basic Town Corrections: ----- .5 Hours ------- Oct. 14
+
+
+## [Week 5](Weeklies/Week%205.html) Total: 8 Hours
+
+## [Week 6](Weeklies/Week%206.html) Total: 7.75 Hours
+
+## [Week 7](Weeklies/Week%207.html) Total: 4.5 Hours
+
+## [Week 8](Weeklies/Week%208.html) Total: 6.5 Hours
+
+## [Week 9](Weeklies/Week%208.html) Total: 2 Hours
+
+## [Week 10](Weeklies/Week%2010.html) Total: 5 Hours
