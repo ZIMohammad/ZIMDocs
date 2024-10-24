@@ -23,17 +23,17 @@
 
 <h2>Click images to download GLTF files</h2>
 
-<a href="Models/GLTF/Small Rampart.gltf" download="Small Rampart.gltf"><img src="Models/Pics/Small Rampart.png"
+<a href="Models/GLTF/Small Rampart.gltf" download="Small Rampart.gltf"><img class="gallery" src="Models/Pics/Small Rampart.png"
   alt="Small Rampart"width="600" height="auto" align="right"></a>
-<a href="Models/GLTF/RB Protag.gltf" download="RB Protag.gltf"><img src="Models/Pics/RB Protag.png"
+<a href="Models/GLTF/RB Protag.gltf" download="RB Protag.gltf"><img class="gallery" src="Models/Pics/RB Protag.png"
   alt="Player" width="600" height="auto" align="right"></a>
-<a href="Models/GLTF/Large Castle.gltf" download="Large Castle.gltf"><img src="Models/Pics/Large Castle.png"
+<a href="Models/GLTF/Large Castle.gltf" download="Large Castle.gltf"><img class="gallery" src="Models/Pics/Large Castle.png"
   alt="Large Castle" width="600" height="auto" align="right"></a>
-<a href="Models/GLTF/Broadsword.gltf" download="Broadsword.gltf"><img src="Models/Pics/Sword.png"
+<a href="Models/GLTF/Broadsword.gltf" download="Broadsword.gltf"><img class="gallery" src="Models/Pics/Sword.png"
   alt="Broadsword" width="600" height="auto" align="right"></a>
-<a href="Models/GLTF/Pine Tree.gltf" download="Pine Tree.gltf"><img src="Models/Pics/Pine Trees.png"
+<a href="Models/GLTF/Pine Tree.gltf" download="Pine Tree.gltf"><img class="gallery" src="Models/Pics/Pine Trees.png"
   alt="Trees" width="600" height="auto" align="right"></a>
-<a href="Models/GLTF/Tower.gltf" download="Tower.gltf"><img src="Models/Pics/Tower.png"
+<a href="Models/GLTF/Tower.gltf" download="Tower.gltf"><img class="gallery" src="Models/Pics/Tower.png"
   alt="Tower" width="600" height="auto" align="right"></a>
 
 </body>
@@ -45,15 +45,19 @@ body {
     background-color: #121212;
     color: #ffffff;
     }
-h2{
-    padding-left: 150px;
-    color: whitesmoke;
-    font-weight: normal;
-    font: Georgia;
+h2 {
+    margin-left: 10%;
+    color: #22ff55;
+    background: linear-gradient(to right, #00aa22, #22ff55);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 img{
-    padding: 50px;
+    margin-right: 5%;
+    margin-top: 5%;
 }
 .main-section {
     height: 100vh;
@@ -104,6 +108,14 @@ img{
     padding: 10px 20px;
     border-radius: 5px;
     transition: transform 0.3s, background-color 0.3s;
+}
+
+.gallery {
+            transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.gallery:hover {
+            transform: scale(1.05);
 }
 </style>
 <script>
