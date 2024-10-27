@@ -13,7 +13,7 @@
             <h1>3D Models</h1>
             <nav class="navigation">
                 <ul>
-                    <li><a href="Resume.html">Resumé</a></li>
+                    <li><a href="Resume.pdf" target=”_blank”>Resumé</a></li>
                     <li><a href="Games.html">Games</a></li>
                     <li><a href="#">3D Models</a></li>
                 </ul>
@@ -22,19 +22,20 @@
     </header>
 
 <h2>Click images to download GLTF files</h2>
-
+<div class="models">
 <a href="Models/GLTF/Small Rampart.gltf" download="Small Rampart.gltf"><img class="gallery" src="Models/Pics/Small Rampart.png"
-  alt="Small Rampart"width="600" height="auto" align="right"></a>
+  alt="Small Rampart" align="left"></a>
 <a href="Models/GLTF/RB Protag.gltf" download="RB Protag.gltf"><img class="gallery" src="Models/Pics/RB Protag.png"
-  alt="Player" width="600" height="auto" align="right"></a>
+  alt="Player" align="right"></a>
 <a href="Models/GLTF/Large Castle.gltf" download="Large Castle.gltf"><img class="gallery" src="Models/Pics/Large Castle.png"
-  alt="Large Castle" width="600" height="auto" align="right"></a>
+  alt="Large Castle" align="left"></a>
 <a href="Models/GLTF/Broadsword.gltf" download="Broadsword.gltf"><img class="gallery" src="Models/Pics/Sword.png"
-  alt="Broadsword" width="600" height="auto" align="right"></a>
+  alt="Broadsword" align="right"></a>
 <a href="Models/GLTF/Pine Tree.gltf" download="Pine Tree.gltf"><img class="gallery" src="Models/Pics/Pine Trees.png"
-  alt="Trees" width="600" height="auto" align="right"></a>
+  alt="Trees" align="left"></a>
 <a href="Models/GLTF/Tower.gltf" download="Tower.gltf"><img class="gallery" src="Models/Pics/Tower.png"
-  alt="Tower" width="600" height="auto" align="right"></a>
+  alt="Tower" align="right"></a>
+</div>
 
 </body>
 </html>
@@ -57,8 +58,19 @@ h2 {
 }
 
 img{
-    margin-right: 5%;
+    margin-left: 1.25%;
     margin-bottom: 5%;
+    height: 400px;
+    width: 60%;
+    max-width: 600px;
+    min-width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.models {
+    margin-right: 7.5%;
+    margin-left: 6.25%;
 }
 .main-section {
     height: 100vh;
