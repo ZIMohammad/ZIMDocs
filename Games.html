@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="pNav.js"></script>
 </head>
 <body>
     <header class="main-section">
@@ -17,6 +18,7 @@
                     <li><a href="Resume.pdf" target=”_blank”>Resumé</a></li>
                     <li><a href="#">Games</a></li>
                     <li><a href="3Dmodels.html">3D Models</a></li>
+                    <li><a href="https://github.com/ZIMohammad">GitHub</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,7 +26,7 @@
 
     <div class="horizontal-line"></div>
 <h2>Games // Rising Blade</h2>
-<table>
+<table = style="margin-left: 5%;margin-right: 5%;">
   <tr>
     <td>
 <iframe frameborder="0"
@@ -42,17 +44,11 @@
   <tr>
     <td class="table-l"> <h3 style="float: left;">Short 3D puzzle game made in the Unity game engine. Developed over the first 8 months of 2021, this solo-project features a swordsman who uses his offensive and evasive prowesses to navigate a foreign, puzzle-laden landscape.</h3></td>
     </td>
-    <td>
-    <img src="Games/Pics/RB1.png" alt="Running" align="right">
-    </td>
+    <td> <img src="Games/Pics/RB1.png" alt="Running" align="right"> </td>
   </tr>
   <tr>
-    <td>
-    <img src="Games/Pics/RB2.png" alt="Contemplating" align="left">
-    </td>
-    <td>
-    <img src="Games/Pics/RB3.png" alt="Interacting" align="right">
-    </td>
+    <td> <img src="Games/Pics/RB2.png" alt="Contemplating" align="left"> </td>
+    <td> <img src="Games/Pics/RB3.png" alt="Interacting" align="right"> </td>
   </tr>
 </table>
 <div class="horizontal-line"></div>
@@ -101,42 +97,14 @@
 </table>
 <table>
   <tr>
-    <td>
-    </td>
-    <td>
-    <a href="https://wolverinesoft-studio.itch.io/tails-of-war">Tails of War by WolverineSoft Studio</a></iframe>
-    </td>
+    <td> </td>
+    <td> <a href="https://wolverinesoft-studio.itch.io/tails-of-war">Tails of War by WolverineSoft Studio</a></iframe> </td>
   </tr>
 </table>
   
 </body>
 </html>
 <style>
-h2{
-    text-align: right;
-    margin-right: 20%;
-    text-indent: 20%;
-}
-h3{
-    color: whitesmoke;
-    font: Georgia;
-    font-weight: normal;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-indent: 5%;
-    left: 100;
-    top: 150;
-}
-h4{
-    color: whitesmoke;
-    font: Georgia;
-    font-weight: normal;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-indent: 5%;
-    left: 100;
-    top: 150;
-}
 img{
     padding: 50px;
     width: 80%;
@@ -144,18 +112,6 @@ img{
     max-width: 600px;
     object-fit: cover;
     object-position: center;
-}
-iframe{
-    padding: 50px;
-}
-
-table{
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-td, th {
-  width: 50%;
 }
 
 .table-l {
@@ -174,30 +130,4 @@ td, th {
   width: 20%;
 }
 
-.horizontal-line {
-  width: 90%;
-  height: 1px;
-  background: linear-gradient(to right, #22ff55, #00aa22);
-  margin: 0 auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
 </style>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll('.navigation a');
-
-    navLinks.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            link.style.transform = 'scale(1.1)';
-            link.style.backgroundColor = '#00aa22';
-            link.style.transition = 'transform 0.3s, background-color 0.3s';
-        });
-
-        link.addEventListener('mouseleave', () => {
-            link.style.transform = 'scale(1)';
-            link.style.backgroundColor = 'transparent';
-        });
-    });
-});
-</script>

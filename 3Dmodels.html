@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Models Portfolio</title>
+    <script src="pNav.js"></script>
 </head>
 <body>
 
@@ -17,6 +18,7 @@
                     <li><a href="Resume.pdf" target=”_blank”>Resumé</a></li>
                     <li><a href="Games.html">Games</a></li>
                     <li><a href="#">3D Models</a></li>
+                    <li><a href="https://github.com/ZIMohammad">GitHub</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +43,6 @@
 </body>
 </html>
 <style>
-
 img{
     margin-left: 1.25%;
     margin-bottom: 5%;
@@ -52,35 +53,4 @@ img{
     object-fit: cover;
     object-position: center;
 }
-
-.models {
-    margin-right: 7.5%;
-    margin-left: 6.25%;
-}
-
-.gallery {
-            transition: transform 0.2s ease-in-out; /* Smooth transition */
-}
-
-.gallery:hover {
-            transform: scale(1.05);
-}
 </style>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll('.navigation a');
-
-    navLinks.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            link.style.transform = 'scale(1.1)';
-            link.style.backgroundColor = '#00aa22';
-            link.style.transition = 'transform 0.3s, background-color 0.3s';
-        });
-
-        link.addEventListener('mouseleave', () => {
-            link.style.transform = 'scale(1)';
-            link.style.backgroundColor = 'transparent';
-        });
-    });
-});
-</script>
