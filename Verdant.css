@@ -11,7 +11,7 @@ html::-webkit-scrollbar {
 
 body {
 	min-height: 100vh;
-	background-image: url('Back Hex.png');
+	background-image: url('Images/Back Hex.png');
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	background-position: top center;
@@ -65,8 +65,6 @@ td, th { width: 50%; }
     margin-left: 10%;
     text-align: center;
 }
-
-
 
 .main-content p {
     font-size: 1.5rem;
